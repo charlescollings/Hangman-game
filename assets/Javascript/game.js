@@ -10,8 +10,6 @@ let lettersGuessed = document.getElementById("lettersGuessedDiv");
 // Set currentWins to 0 to start
 let currentWins = 0;
 
-
-
 // Set up page that will show on load
 press.textContent = ("Press any key to start!");
 wins.textContent = ("wins: " + currentWins);
@@ -41,21 +39,19 @@ document.onkeyup = function() {
         lettersGuessed.textContent = ("Letters already guessed: " + userInput);
         // do an append here to show all letters guessed
 
+        
+        for (var i=0; i< randomWord.length; i++) {
+            if (userInput === randomWord[i]);
+                currentWord[i] = userInput;
+                return currentWord.textContent = ("Current word: " + currentWord[i]);
+                console.log(currentWord[i]);
+        }
+        
         // does userInput match any letters from randomWorld?
             // if userInput === randomWord[0 - randomWord.length],
                 // do loop here to run through all characters of currentWord
                 // if first letter matches output currentWord.textContent = ("Current word: " + userEntry + "- ".repeat(randomWord.length - 1)
                     // if not then move to the second letter
-            if (userInput === randomWord[0]) {
-                currentWord.textContent = ("Current word: " + userInput + " - ".repeat(randomWord.length - 1))
-
-
-
-            }
-
-            else {
-
-            }
                     
 
     }
