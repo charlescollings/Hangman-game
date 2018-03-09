@@ -1,3 +1,5 @@
+
+
 // connect JS variables to document
 let press = document.getElementById("pressDiv");
 let wins = document.getElementById("winsDiv");
@@ -7,6 +9,8 @@ let lettersGuessed = document.getElementById("lettersGuessedDiv");
 
 // Set currentWins to 0 to start
 let currentWins = 0;
+
+let currentWord = [];
 
 // Set up page that will show on load
 press.textContent = ("Press any key to start!");
@@ -35,6 +39,7 @@ document.onkeyup = function() {
         numberGuesses.textContent = ("Remaining guesses: " + guessNumber);
         // show letter in LettersGuessed
         lettersGuessed.textContent = ("Letters already guessed: " + userInput);
+        // do an append here to show all letters guessed
 
         // does userInput match any letters from randomWorld?
             // if userInput === randomWord[0 - randomWord.length],
