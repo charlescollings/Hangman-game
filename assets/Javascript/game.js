@@ -10,7 +10,7 @@ let lettersGuessed = document.getElementById("lettersGuessedDiv");
 // Set currentWins to 0 to start
 let currentWins = 0;
 
-let currentWord = [];
+
 
 // Set up page that will show on load
 press.textContent = ("Press any key to start!");
